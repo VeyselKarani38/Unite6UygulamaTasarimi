@@ -17,12 +17,12 @@ public class SiraSizde1 extends AppCompatActivity {
     ImageView imgresim;
     int sayac = 0;
     public void tanimlamalar() {
-        dogumt = findViewById(R.id.ss247YasamT);
-        isim = findViewById(R.id.ss247AdSoyad);
-        hakkinda = findViewById(R.id.ss247Hakkinda);
-        imgresim = findViewById(R.id.ss247Resim);
-        ileri = findViewById(R.id.ss247Ileri);
-        geri = findViewById(R.id.ss247Geri);
+        dogumt = findViewById(R.id.ssYasamT);
+        isim = findViewById(R.id.ssAdSoyad);
+        hakkinda = findViewById(R.id.ssHakkinda);
+        imgresim = findViewById(R.id.ssResim);
+        ileri = findViewById(R.id.ssIleri);
+        geri = findViewById(R.id.ssGeri);
     }
 
     ArrayList<SiraSizde1_Class> sinif = new ArrayList<>();
@@ -33,15 +33,15 @@ public class SiraSizde1 extends AppCompatActivity {
         tanimlamalar();
 
         SiraSizde1_Class kisi1 = new SiraSizde1_Class("8 Eylül 1946","Aziz Sancar","Türk Kimyager ve bilim insanı.",1,R.drawable.azizsancar);
-        SiraSizde1_Class kisi2 = new SiraSizde1_Class("(Unknown) 1403","Ali Kuşçu","Müslüman Fizikçi ve filozof.",2,R.drawable.alikuscu);
-        SiraSizde1_Class kisi3 = new SiraSizde1_Class("(Unknown) 780","Harezmi","Matematikçi ve gök bilimcidir.",3,R.drawable.harezmi);
+        SiraSizde1_Class kisi2 = new SiraSizde1_Class("bilinmiyor 1403","Ali Kuşçu","Müslüman Fizikçi ve filozof.",2,R.drawable.alikuscu);
+        SiraSizde1_Class kisi3 = new SiraSizde1_Class("bilinmiyor 780","Harezmi","Matematikçi ve gök bilimcidir.",3,R.drawable.harezmi);
         SiraSizde1_Class kisi4 = new SiraSizde1_Class("12 Ağustos 980","İbn Sînâ","Doktor astronom ve yazardır.",4,R.drawable.ibnsina);
         SiraSizde1_Class kisi5 = new SiraSizde1_Class("10 Temmuz 1856","Nikola Tesla","Elektrik Mühendisi ve Mucit.",5,R.drawable.tesla);
         SiraSizde1_Class kisi6 = new SiraSizde1_Class("24 Mart 1955","Celal Şengör","Başarılı Türk yer bilimci.",6,R.drawable.jamalsengor);
         SiraSizde1_Class kisi7 = new SiraSizde1_Class("21 Mayıs 1947","İlber Ortaylı","Başarılı Türk Tarihçi ve yazar.",7,R.drawable.ilberhocam);
-        SiraSizde1_Class kisi8 = new SiraSizde1_Class("(Unknown) 1465","Piri Reis","Türk Denizci ve Kartograf.",8,R.drawable.pirireis);
-        SiraSizde1_Class kisi9 = new SiraSizde1_Class("(Unknown) 1008","Kaşgarlı Mahmut","Türk dilci ve leksikograf.",9,R.drawable.kasgarlimahmut);
-        SiraSizde1_Class kisi10 = new SiraSizde1_Class("14 Mart 1879","Albert Einstein","Teorik fizikçi ve bilim adamı.",10,R.drawable.einstein);
+        SiraSizde1_Class kisi8 = new SiraSizde1_Class("bilinmiyor 1465","Piri Reis","Türk Denizci ve Kartograf.",8,R.drawable.pirireis);
+        SiraSizde1_Class kisi9 = new SiraSizde1_Class("bilinmiyor 1008","Kaşgarlı Mahmut","Türk dilci ve leksikograf.",9,R.drawable.kasgarlimahmut);
+        SiraSizde1_Class kisi10 = new SiraSizde1_Class("14 Mart 1879","Albert Einstein","Teorik fizikçi ",10,R.drawable.einstein);
 
         sinif.add(kisi1);
         sinif.add(kisi2);
@@ -65,7 +65,7 @@ public class SiraSizde1 extends AppCompatActivity {
                     sayac++;
                 }
                 else {
-                    Toast.makeText(SiraSizde1.this, "Sona geldin.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SiraSizde1.this, "BİTTİ   ", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -81,7 +81,7 @@ public class SiraSizde1 extends AppCompatActivity {
                     hakkinda.setText("Hakkında: " + sinif.get(sayac).hakkinda);
                 }
                 else {
-                    Toast.makeText(SiraSizde1.this, "Sona geldin.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SiraSizde1.this, " BİTTİ.", Toast.LENGTH_SHORT).show();
                 }
             }
         });
