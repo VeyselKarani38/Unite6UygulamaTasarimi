@@ -34,7 +34,7 @@ public class Uyg1Activity extends AppCompatActivity {
         Uyg1Class resim1 = new Uyg1Class("Sarı Balon",1,R.drawable.resim1);
         Uyg1Class resim2 = new Uyg1Class("Mavi Çiçek",2,R.drawable.resim2);
         Uyg1Class resim3 = new Uyg1Class("Mavi Kelebek",3,R.drawable.resim3);
-        Uyg1Class resim4 = new Uyg1Class("Yuvada Kuş",4,R.drawable.resim4);
+        Uyg1Class resim4 = new Uyg1Class("Yeşil Kuş",4,R.drawable.resim4);
 
         resimList.add(resim1);
         resimList.add(resim2);
@@ -50,7 +50,7 @@ public class Uyg1Activity extends AppCompatActivity {
                     sayac++;
                 }
                 else {
-                    Toast.makeText(Uyg1Activity.this, "Sona geldin.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Uyg1Activity.this, "BİTTİ", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -64,7 +64,7 @@ public class Uyg1Activity extends AppCompatActivity {
                     bilgi.setText("Bilgi : " + resimList.get(sayac).resimbilgi);
                 }
                 else {
-                    Toast.makeText(Uyg1Activity.this, "Sona geldin.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Uyg1Activity.this, "BİTTİ", Toast.LENGTH_SHORT).show();
                 }
             }
         });
