@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">UygulamaTasarimiUnite6</string>
+    <string name="ileri">ileri</string>
+    <string name="geri">Geri</string>
+    <string name="bilgi">Bilgi:</string>
+    <string name="todo">TODO</string>
+</resources>
